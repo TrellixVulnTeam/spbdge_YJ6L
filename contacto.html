@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <a href="index.html"><img src="img/Space Bridge.png" class="logo"></a>
+        <nav>
+          <a href="index.html"> <button type="button">Inicio</button></a>
+          <a href="misiones.html"> <button type="button">Misiones</button></a>
+          <a href="aboutus.html"> <button type="button">Sobre Nosotros</button></a>
+          <a href="galeria.html"><button type="button">Galería</button></a>
+          <a href="contacto.html"><button type="button">Contacto</button></a>
+        </nav>
+        <form>
+             <label for="gsearch">Búsqueda:</label>
+             <input type="search" id="gsearch" name="gsearch">
+             <img src="img/banderaReinoUnido.png" class="flag"> 
+        </form>
+    </header>  
+    <main>  
+      <h1>Formulario de contacto</h1>
+      <form name="ContactoSB" action="index.html" method="post">
+          <table class="tablaContacto">
+            <tr>
+              <td>Contacto</td>
+            </tr>
+            <tr>
+              <td>Nombre</td>
+              <td><input type="text" name="name" maxlength="50"></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><input type="text" name="email" maxlength="50"></td>
+            </tr>
+       
+            <tr>
+              <td>País de nacimiento</td>
+              <td>
+                <select name="nacionalidad">
+                  <option value="arg">Argentina</option>
+                  <option value="bol">Bolivia</option>
+                  <option value="br">Brasil</option>
+                  <option value="ch">Chile</option>
+                  <option value="col">Colombia</option>
+                  <option value="ec">Ecuador</option>
+                  <option value="mex">México</option>
+                  <option value="par">Paraguay</option>
+                  <option value="per">Perú</option>
+                  <option value="uru">Uruguay</option>
+                </select>
+              </td>
+            </tr>
+       
+            <tr>
+              <td>Newsletter</td> 
+              <td>   
+                <input type="checkbox" name="true">¿Desea suscribirse a nuestro newsletter?
+              </td>
+            </tr>
+       
+            <tr>
+              <td>Déjenos su consulta</td>
+              <td>
+                <textarea name="consulta" cols="50" rows="5"></textarea>
+              </td>
+            </tr>
+       
+            <tr>
+              <td></td>
+              <td>
+                <input type="submit" name="enviar" value="Enviar formulario">
+                <input type="reset" name="reset" value="Limpiar formulario">
+              </td>
+            </tr>
+          </table>
+      </form>
+    </main>
+    <footer>
+      <img src="img/Space Bridge.png" class="logoFooter">  
+      <div class="autorFooter">
+        <p>Diseñado por: Juan Ignacio Torres 
+      </div>
+      <div class="linksFooter">
+        <a href="">Preguntas frecuentes </a><a href="">Privacidad </a><a href="">Contactanos </a></p>
+      </div>
+    </footer>
+</body>
+</html>
