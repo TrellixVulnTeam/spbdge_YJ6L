@@ -5,34 +5,41 @@
 	<meta name="author" content="Juan Ignacio Torres">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Space Bridge</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> <!-- CDN de la librería de Popper  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 	<header>
 		<a href="index.html"><img src="img/Space Bridge.png" class="logo"></a> 
         <nav>
-			<a href="index.html"> <button type="button">Inicio</button></a>
-            <a href="misiones.html"> <button type="button">Misiones</button></a>
-            <a href="aboutus.html"> <button type="button">Sobre Nosotros</button></a>
-            <a href="galeria.html"><button type="button">Galería</button></a>
-            <a href="contacto.html"><button type="button">Contacto</button></a>
+			<a href="index.html"> <button type="button" class="btn btn-secondary">Inicio</button> </a>
+            <a href="misiones.html"> <button type="button" class="btn btn-secondary">Misiones</button></a>
+            <a href="aboutus.html"> <button type="button" class="btn btn-secondary">Sobre nosotros</button></a>
+            <a href="galeria.html"><button type="button" class="btn btn-secondary">Galería</button></a>
+            <a href="contacto.html"><button type="button" class="btn btn-secondary">Contacto</button></a>
         </nav>
-		<form>
-  				<label for="gsearch">Búsqueda:</label>
- 				<input type="search" id="gsearch" name="gsearch">
- 				<img src="img/banderaReinoUnido.png" class="flag">  
-		</form>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Buscar.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
 	</header>
 	<main>
 		<div class="newsMainRow">
-			<h1>Novedades</h1> 
+			<div class="mainNews wow animate__bounceIn"><h1>Novedades</h1></div>
 			<center><p style="font-size:40px">&#128240;</p></center>
 		</div>
 		<div class="mainNews">
 			<img src="img/rovernov.png" class="principalNews"> 
 			<div class="newsColumn">
 				<h3><u>Rediseñamos nuestro Rover</u></h3>
-				<p>Estamos yendo por un camino de evolución, donde vamos sumando mejoras paulatinamente para darle a este nuevo diseño las mejores características posibles. El rediseño incluye una estructura central con un centro de gravedad más bajo y ruedas más separadas entre sí (lo que le da estabilidad), disminuímos las curvas en el chasis (lo que permite optimizar el espacio interno), motores alojados en el interior del rover (lo que le brinda protección contra el polvo), un cabezal fijo para la cámara con un vidrio de 360° (lo que permite que el cabezal no se trabe con el polvo lunar), además este diseño será impreso en 3D con fibra de carbono (lo que nos proporciona una ligereza y resistencia mucho mayor al anterior).  </p>
+				<p class="lead">Estamos yendo por un camino de evolución, donde vamos sumando mejoras paulatinamente para darle a este nuevo diseño las mejores características posibles. El rediseño incluye una estructura central con un centro de gravedad más bajo y ruedas más separadas entre sí (lo que le da estabilidad), disminuímos las curvas en el chasis (lo que permite optimizar el espacio interno), motores alojados en el interior del rover (lo que le brinda protección contra el polvo), un cabezal fijo para la cámara con un vidrio de 360° (lo que permite que el cabezal no se trabe con el polvo lunar), además este diseño será impreso en 3D con fibra de carbono (lo que nos proporciona una ligereza y resistencia mucho mayor al anterior).  </p>
 			</div>
 		</div>
 		<h2> Más novedades	</h2>
@@ -54,20 +61,32 @@
    				<p>El polvo lunar puede ser un problema serio para los astronautas: proponen deshacerse de él con un haz de electrones... <a href="" class="vermas">ver más</a></p>
 			</div>
 		</div>
-		<div class="newsRow">
-			<div class="newsColumn">
-				<p class="icon">&#128227;</p>
-				<p>Si querés consultarnos algo escribinos a nuestro correo electrónico: <a href="">spbdg@gmail.com</a></p>
-			</div>
-			<div class="newsColumn">
-				<p class="icon">&#129309;</p>
-				<p>Somos un grupo de estudiantes de diferentes países de Latinoamérica con un mismo objetivo: enviar un Moon Rover a la luna.</p>
-			</div>
-			<div class="newsColumn">
-				<p class="icon">&#128204;</p>
-				<p>Estamos en búsqueda de sponsors, si querés ayudarnos encontrá más información: <a href="">aquí</a></p>
-			</div>
-		</div>	
+		<div class="contenedorCards d-flex justify-content-center">
+			<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1599597435338-adbf0f27b5b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80" alt="img1">
+				<div class="card-body">
+			  		<h5 class="card-title">Consultas</h5>
+			  		<p class="card-text">Si querés consultarnos algo escribinos tu duda</p>
+			  		<a href="contacto.html" class="btn btn-primary">Escríbenos</a>
+				</div>
+		  	</div>
+		  	<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1512626120412-faf41adb4874?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img2">
+				<div class="card-body">
+			  		<h5 class="card-title">Quiénes somos</h5>
+			  		<p class="card-text">Somos un grupo de estudiantes de diferentes países de Latinoamérica con un mismo objetivo: enviar un Moon Rover a la luna.</p>
+			  		<a href="aboutus.html" class="btn btn-primary">Entérate más</a>
+				</div>
+		  	</div>
+		  	<div class="card" style="width: 18rem;">
+				<img class="card-img-top" src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="img3">
+				<div class="card-body">
+			  		<h5 class="card-title">Sponsors</h5>
+			  		<p class="card-text">Estamos en búsqueda de sponsors, si querés ayudarnos pedì más información</p>
+			  	<a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+				</div>
+		  	</div>
+		</div>
 	</main>
 	<footer>
 		<img src="img/Space Bridge.png" class="logoFooter">   
@@ -78,5 +97,10 @@
 			<a href="aboutus.html">Preguntas frecuentes </a><a href="">Privacidad </a><a href="contacto.html">Contactanos </a></p>
 		</div>
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+   		new WOW().init();
+	</script>
+	
 </body>
 </html>
