@@ -121,11 +121,6 @@ span {
   text-align: center;
 }
 
-.flag {
-  width: 30px;
-  height: 25px;
-}
-
 .logo {
   width: 250px;
   height: 200px;
@@ -137,7 +132,7 @@ span {
 
 .logoFooter {
   width: 200px;
-  height: 150px;
+  height: 166.6666666667px;
 }
 
 .tablaContacto {

@@ -1,3 +1,10 @@
+$medidaMain: 1000px;
+$colorHover: rgb(245, 82, 82);
+@mixin altoyancho ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 body {
     background-color: black;
 }
@@ -101,7 +108,7 @@ nav {
 
 main {
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: $medidaMain/10;
     text-align: center;
 }
 
@@ -113,14 +120,9 @@ span {
     text-align: center;
 }
 
-.flag {
-    width: 30px;
-    height: 25px;
-}
-
 .logo {
-    width: 250px;
-    height: 200px;
+    width: $medidaMain/4;
+    height: $medidaMain/5;
 }
 
 .logo:hover{
@@ -128,8 +130,8 @@ span {
 }
 
 .logoFooter {
-    width: 200px;
-    height: 150px;
+    width: $medidaMain/5;
+    height: $medidaMain/6;
 }
 
 .tablaContacto {
@@ -145,12 +147,11 @@ span {
 }
 
 .imagenNoticia {
-    width: 100px;
-    height: 100px;
+   @include altoyancho(100px, 100px);
 }
 
 .principalNews {
-    width: 500px;
+    width: $medidaMain/2;
     height: 300px;
 }
 
@@ -231,8 +232,8 @@ footer {
 }
 
 .btn:hover {
-  background-color: rgb(245, 82, 82);
-  border-color: rgb(245, 82, 82);
+  background-color: $colorHover;
+  border-color: $colorHover;
 }
 
 .my-sm-0 {
