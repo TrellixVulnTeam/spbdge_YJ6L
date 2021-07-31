@@ -1,253 +1,248 @@
+@charset "UTF-8";
 body {
-    background-color: black;
+  background-color: black;
 }
 
-table{
-    width: 100%;
-    border: 1px solid white;
-  }
-td, th {
-    text-align: center;
-    border: 1px solid white;
-    color: white;
+table {
+  width: 100%;
+  border: 1px solid white;
 }
+
+td, th {
+  text-align: center;
+  border: 1px solid white;
+  color: white;
+}
+
 h1 {
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    background-image: linear-gradient(to left, red, black); 
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(to left, red, black);
 }
 
 h2 {
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-family: 'Nunito', sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
 }
 
 h3 {
-    color: white;
-    background-color: black;
-    font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: black;
+  font-family: "Nunito", sans-serif;
 }
 
 p {
-    font-family: 'Nunito', sans-serif;
-    color: white;
+  font-family: "Nunito", sans-serif;
+  color: white;
 }
 
-.autorFooter { /* autor footer */
-    text-align: center;
+.autorFooter {
+  /* autor footer */
+  text-align: center;
 }
 
-.linksFooter { /* links del footer */
-    text-align: right;
-    font-family: 'Nunito', sans-serif;
+.linksFooter {
+  /* links del footer */
+  text-align: right;
+  font-family: "Nunito", sans-serif;
 }
 
-ul li { /* listas desordenadas*/
-    list-style-type: none;
-    color: white;
-    text-align: left;
-    font-family: 'Nunito', sans-serif;
+ul li {
+  /* listas desordenadas*/
+  list-style-type: none;
+  color: white;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
 }
 
-ol li { /* listas ordenadas */
-    list-style-type: none;
-    color:white;
-    text-align: left;
-    font-family: 'Nunito', sans-serif;
+ol li {
+  /* listas ordenadas */
+  list-style-type: none;
+  color: white;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
 }
 
-.vermas { /* ver más en itálica */
-    font-style: italic;
+.vermas {
+  /* ver más en itálica */
+  font-style: italic;
 }
 
 .azul {
-    color:blue;
+  color: blue;
 }
 
 button {
-    background-color: grey;
-    font-family: 'Nunito', sans-serif;
+  background-color: grey;
+  font-family: "Nunito", sans-serif;
 }
 
 label {
-    color: white;
-    font-family: 'Nunito', sans-serif;
+  color: white;
+  font-family: "Nunito", sans-serif;
 }
 
-input{
-    color: black;
-    background-color: white;
-    font-family: 'Nunito', sans-serif;
+input {
+  color: black;
+  background-color: white;
+  font-family: "Nunito", sans-serif;
 }
 
 nav {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
 }
-
 nav button {
-    display: inline-block;
-    padding: 20px;
+  display: inline-block;
+  padding: 20px;
 }
-
 nav button:hover {
-    background-color: red;
-    transform: scale(1.1);
-
+  background-color: red;
+  transform: scale(1.1);
 }
-
 
 main {
-    margin-top: 30px;
-    margin-bottom: 100px;
-    text-align: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 span {
-    text-align: center;
+  text-align: center;
 }
 
 .integrante li {
-    text-align: center;
+  text-align: center;
 }
 
 .flag {
-    width: 30px;
-    height: 25px;
+  width: 30px;
+  height: 25px;
 }
 
 .logo {
-    width: 250px;
-    height: 200px;
+  width: 250px;
+  height: 200px;
 }
 
-.logo:hover{
-    transform: scale(1.2);
+.logo:hover {
+  transform: scale(1.2);
 }
 
 .logoFooter {
-    width: 200px;
-    height: 150px;
+  width: 200px;
+  height: 150px;
 }
 
 .tablaContacto {
-    width:fit-content;
-    margin-left: 525px;
-    border:none
+  width: fit-content;
+  margin-left: 525px;
+  border: none;
 }
-
 .tablaContacto td {
-        font-weight: bold;
-        color: white;
-        font-family: 'Nunito', sans-serif;
-        border: none;
+  font-weight: bold;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  border: none;
 }
-
 
 .imagenNoticia {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .principalNews {
-    width: 500px;
-    height: 300px;
+  width: 500px;
+  height: 300px;
 }
 
 header {
-    min-height: 120px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+}
+.contenedorCards {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contenedorCards {
+    flex-direction: row;
+  }
+}
 .secondaryNews {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.mainNews{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 50px;
+.mainNews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .newsColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card {
-    margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .newsRow p {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .newsMainRow {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
-    font-size: 40px;
+  font-size: 40px;
 }
 
-.search-container {
-    float: right;
-  }
-  
-.search-container input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-  
- .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
- .search-container button:hover {
-    background: #ccc;
-  }
-  
-  .card {
-      background-color: black;
-      color: white;
-      }
+.card {
+  background-color: black;
+  color: white;
+  margin: 2rem;
+}
 
 .btn {
-    background-color: grey;
-    border-color: grey;
+  background-color: grey;
+  border-color: grey;
 }
 
 .btn:hover {
-    background-color: rgb(245, 82, 82);
-    border-color: rgb(245, 82, 82);
+  background-color: #f55252;
+  border-color: #f55252;
 }
+
+.my-sm-0 {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
